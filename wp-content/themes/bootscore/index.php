@@ -51,7 +51,7 @@ get_header();
 					?>
 					<?php foreach ( $interviews as $interview ) : ?>
 					<div class="col mb-5">
-						<div class="ratio ratio-16x9 mb-3"><iframe src="<?php echo $interview['src']; ?>" width="640" height="360" frameborder="0"
+						<div class="ratio ratio-16x9 mb-3"><iframe loading="lazy" src="<?php echo $interview['src']; ?>" width="640" height="360" frameborder="0"
 									allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
 						<h3><?php echo $interview['headline']; ?></h3>
 						<p><?php echo $interview['subheadline']; ?></p>
@@ -233,7 +233,7 @@ get_header();
 				<div class="row">
 					<div class="col-12 col-lg-6 order-1 order-lg-2">
 						<div class="ratio ratio-16x9 mb-3">
-							<iframe src="https://player.vimeo.com/video/899934703?h=6df7bf7874" width="640" height="360" frameborder="0"
+							<iframe loading="lazy" src="https://player.vimeo.com/video/899934703?h=6df7bf7874" width="640" height="360" frameborder="0"
 									allow="autoplay; fullscreen; picture-in-picture"></iframe>
 						</div>
 					</div>
@@ -257,7 +257,8 @@ get_header();
 				<div class="row">
 					<div class="col-12 col-lg-6">
 						<div class="ratio ratio-16x9 mb-3">
-							<iframe src="https://player.vimeo.com/video/899928430" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"></iframe>
+							<iframe loading="lazy" src="https://player.vimeo.com/video/899928430" width="640" height="360" frameborder="0"
+									allow="autoplay; fullscreen; picture-in-picture"></iframe>
 						</div>
 					</div>
 					<div class="col-12 col-lg-6">
@@ -302,8 +303,9 @@ get_header();
 					<div class="col">
 						<h2>Official Trailer (Choctaw Subbed)</h2>
 						<div class="ratio ratio-16x9 mb-3">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/wlgpDnsU12E?si=GW4aEmDC5YpiVUMt&rel=0" title="Echo Official Trailer (Choctaw Subbed)"
-									frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+							<iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/wlgpDnsU12E?si=GW4aEmDC5YpiVUMt&rel=0"
+									title="Echo Official Trailer (Choctaw Subbed)" frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
 						</div>
 					</div>
 				</div>
