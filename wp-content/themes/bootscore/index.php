@@ -62,11 +62,11 @@ get_header();
               <div class="row h-100 py-4">
 				  <div class="col-12 col-xl-6 position-relative mb-3">
 				  <img src="/wp-content/uploads/2024/01/cno-associates-on-set-feature.jpg" alt="CNO Associates on Set" class="easter-egg-image" style="border-bottom:0;" />
-					<p class="easter-egg-overlay-text text-danger position-relative" style="right: 0; left: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<p class="easter-egg-overlay-text position-relative" style="right: 0; left: 0;">Choctaw Nation consultants and Choctaw artist and writer Steven Paul Judd pose on set during the first day of filming.</p>
 				  </div>
 				  <div class="col-12 col-xl-6 position-relative mb-3">
 					<img src="/wp-content/uploads/2024/01/cno-associates-on-set-feature2.jpg" alt="CNO Associates on Set" class="easter-egg-image" style="border-bottom:0;" />
-					<p class="easter-egg-overlay-text text-danger position-relative" style="right: 0; left: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<p class="easter-egg-overlay-text position-relative" style="right: 0; left: 0;">Following a demonstration of the Choctaw Walk Dance, the cast, crew, and consultants come together to commemorate the first day of filming.</p>
 				  </div>
               </div>
             </div>
@@ -159,11 +159,11 @@ get_header();
           </div>
 
           <div class="col-12 col-lg-6 order-2 order-lg-1">
-            <h2>Teri Billy</h2>
-            <p>Teri Billy is the Assistant Director of the Chahta Anumpa Aiikhvna, or the Choctaw School of Language. Teri is a first language Choctaw speaker, and her main goal is to protect the identity of the Choctaw people by preserving their language. According to her, "It is important for each of us, as well as for our future generations, to connect us to our mother tongue, which relates us to our rich history, culture and language."</p>
+            <h2>Teresa Billy</h2>
+            <p>Teresa Billy is the Assistant Director of the Chahta Anumpa Aiikhvna, or the Choctaw School of Language. Teresa is a first language Choctaw speaker, and her main goal is to protect the identity of the Choctaw people by preserving their language. According to her, "It is important for each of us, as well as for our future generations, to connect us to our mother tongue, which relates us to our rich history, culture and language."</p>
           </div>
           <div class="col-12 order-3">
-            <p>Teri's work with Marvel's translators allowed the show to be subtitled in Choctaw, a first for our tribe. Not only can tribal members see the language of their ancestors on a major television series, but it will help them realize how important it is to learn their language and use it in their everyday lives.</p><p>Teri's husband, Curtis Billy, also worked on the Echo project, providing valuable historical information about the game of stickball. Unfortunately, Curtis passed away before he could see his contributions on the big screen, but we are so grateful for his involvement.</p>
+            <p>Teresa's work with Marvel's translators allowed the show to be subtitled in Choctaw, a first for our tribe. Not only can tribal members see the language of their ancestors on a major television series, but it will help them realize how important it is to learn their language and use it in their everyday lives.</p><p>Teresa's husband, Curtis Billy, also worked on the Echo project, providing valuable historical information about the game of stickball. Unfortunately, Curtis passed away before he could see his contributions on the big screen, but we are so grateful for his involvement.</p>
           </div>
         </div>
       </section>

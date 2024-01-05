@@ -54,19 +54,19 @@
 							<div class="row h-100">
 								<div class="col-6 col-lg-4 order-1 d-flex align-items-center justify-content-center z-1 py-4">
 									<!-- Navbar Brand -->
-									<a class="navbar-brand" href="<?php esc_url( home_url() ); ?>"><img src="/wp-content/uploads/2023/12/cno-seal.svg" alt="Choctaw Nation of Oklahoma Seal"
-											class="logo" style="max-width: 80%; height: auto; width: 200px;"></a>
+									<a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>"><img src="/wp-content/uploads/2023/12/cno-seal.svg"
+											 alt="Choctaw Nation of Oklahoma Seal" class="logo" style="max-width: 80%; height: auto; width: 200px;"></a>
 								</div>
 								<div class="col-12 col-lg-4 order-3 order-lg-2 z-0 px-0">
 									<!-- Navbar Brand -->
 									<img src="/wp-content/uploads/2023/12/echo-poster-slant.png" alt="Echo Poster Art" class="logo h-100 d-none d-lg-block"
-										style="object-fit: cover; overflow:visible;" />
+										 style="object-fit: cover; overflow:visible;" />
 									<img src="/wp-content/uploads/2023/12/echo-poster-wide.jpg" alt="Echo Poster Art" class="logo d-block d-lg-none" />
 								</div>
 								<div class="col-6 col-lg-4 order-2 order-lg-3 d-flex align-items-center justify-content-center z-1 py-4">
 									<!-- Navbar Brand -->
-									<a class="navbar-brand" href="<?php esc_url( home_url() ); ?>"><img src="/wp-content/uploads/2023/12/echo-logo.png" alt="Marvel Echo Logo" class="logo"
-											style="width: 285px; height:auto;"></a>
+									<a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>"><img src="/wp-content/uploads/2023/12/echo-logo.png" alt="Marvel Echo Logo"
+											 class="logo" style="width: 285px; height:auto;"></a>
 								</div>
 							</div>
 						</div>
@@ -85,7 +85,7 @@
 
 						<!-- Top Nav Widget -->
 						<?php if ( is_active_sidebar( 'top-nav' ) ) : ?>
-							<?php dynamic_sidebar( 'top-nav' ); ?>
+						<?php dynamic_sidebar( 'top-nav' ); ?>
 						<?php endif; ?>
 
 						<!-- Navbar Toggler -->
@@ -117,7 +117,7 @@
 
 							<!-- Top Nav 2 Widget -->
 							<?php if ( is_active_sidebar( 'top-nav-2' ) ) : ?>
-								<?php dynamic_sidebar( 'top-nav-2' ); ?>
+							<?php dynamic_sidebar( 'top-nav-2' ); ?>
 							<?php endif; ?>
 
 						</div>
