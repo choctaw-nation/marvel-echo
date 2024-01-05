@@ -34,19 +34,13 @@
 	<link rel="preload" as="image" href="/wp-content/uploads/2023/12/echo-poster-slant.png">
 	<link rel="preload" as="image" href="/wp-content/uploads/2023/12/echo-poster-wide.jpg">
 	<link rel="preload" as="image" href="/wp-content/uploads/2023/12/echo-logo.png">
-
-
 	<link rel="stylesheet" href="https://use.typekit.net/rux8kck.css" preload>
 </head>
 
 <body <?php body_class(); ?>>
-
 	<?php wp_body_open(); ?>
-
 	<div id="page" class="site">
-
 		<header id="masthead" class="site-header">
-
 			<div class="container-fluid h-100 px-0" style="background:url(/wp-content/uploads/2023/12/black-scratch-background.jpg); background-size: cover; --bs-gutter-x: 0;">
 				<div class="row h-100">
 					<div class="col">
@@ -54,19 +48,61 @@
 							<div class="row h-100">
 								<div class="col-6 col-lg-4 order-1 d-flex align-items-center justify-content-center z-1 py-4">
 									<!-- Navbar Brand -->
-									<a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>"><img src="/wp-content/uploads/2023/12/cno-seal.svg"
-											 alt="Choctaw Nation of Oklahoma Seal" class="logo" style="max-width: 80%; height: auto; width: 200px;"></a>
+									<a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>">
+										<?php
+										echo wp_get_attachment_image(
+											8,
+											'full',
+											true,
+											array(
+												'style'   => 'width:200px;max-width:80%',
+												'class'   => 'logo h-auto',
+												'loading' => 'eager',
+											)
+										);
+										?>
+									</a>
 								</div>
 								<div class="col-12 col-lg-4 order-3 order-lg-2 z-0 px-0">
-									<!-- Navbar Brand -->
-									<img src="/wp-content/uploads/2023/12/echo-poster-slant.png" alt="Echo Poster Art" class="logo h-100 d-none d-lg-block"
-										 style="object-fit: cover; overflow:visible;" />
-									<img src="/wp-content/uploads/2023/12/echo-poster-wide.jpg" alt="Echo Poster Art" class="logo d-block d-lg-none" />
+									<?php
+										echo wp_get_attachment_image(
+											12,
+											'full',
+											true,
+											array(
+												'style'   => 'width:285px;',
+												'class'   => 'logo h-100 d-none d-lg-block object-fit-cover overflow-visible',
+												'loading' => 'eager',
+											)
+										);
+										?>
+									<?php
+									echo wp_get_attachment_image(
+										27,
+										'full',
+										true,
+										array(
+											'class'   => 'logo d-block d-lg-none',
+											'loading' => 'eager',
+										)
+									);
+									?>
 								</div>
 								<div class="col-6 col-lg-4 order-2 order-lg-3 d-flex align-items-center justify-content-center z-1 py-4">
-									<!-- Navbar Brand -->
-									<a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>"><img src="/wp-content/uploads/2023/12/echo-logo.png" alt="Marvel Echo Logo"
-											 class="logo" style="width: 285px; height:auto;"></a>
+									<a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>">
+										<?php
+										echo wp_get_attachment_image(
+											11,
+											'full',
+											true,
+											array(
+												'style'   => 'width:285px;',
+												'class'   => 'logo h-auto',
+												'loading' => 'eager',
+											)
+										);
+										?>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -83,25 +119,24 @@
 
 					<div class="header-actions d-flex align-items-center">
 
-						<!-- Top Nav Widget -->
-						<?php if ( is_active_sidebar( 'top-nav' ) ) : ?>
-						<?php dynamic_sidebar( 'top-nav' ); ?>
-						<?php endif; ?>
 
 						<!-- Navbar Toggler -->
-						<button class="btn text-light border-0 d-lg-none ms-1 ms-md-2 w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-navbar"
+						<button class="btn text-light border-0 d-lg-none ms-1 ms-md-2 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#offcanvas-navbar"
 								aria-controls="offcanvas-navbar">
-							<i class="fa-solid fa-bars fa-xl py-4"></i><span class="visually-hidden-focusable">Menu</span>
+							<svg xmlns="http://www.w3.org/2000/svg" style="--size:40px;width:var(--size);height:var(--size);" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+								<path fill-rule="evenodd"
+									  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+							</svg><span class="visually-hidden-focusable">Menu</span>
 						</button>
 
 					</div><!-- .header-actions -->
 
 					<!-- Offcanvas Navbar -->
-					<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-navbar">
-						<div class="offcanvas-body">
+					<div class="collapse navbar-collapse" tabindex="-1" id="offcanvas-navbar">
+						<!-- <div class="offcanvas-body"> -->
 
-							<!-- Bootstrap 5 Nav Walker Main Menu -->
-							<?php
+						<!-- Bootstrap 5 Nav Walker Main Menu -->
+						<?php
 							wp_nav_menu(
 								array(
 									'theme_location' => 'main-menu',
@@ -115,12 +150,8 @@
 							);
 							?>
 
-							<!-- Top Nav 2 Widget -->
-							<?php if ( is_active_sidebar( 'top-nav-2' ) ) : ?>
-							<?php dynamic_sidebar( 'top-nav-2' ); ?>
-							<?php endif; ?>
 
-						</div>
+						<!-- </div> -->
 					</div>
 
 				</div><!-- bootscore_container_class(); -->
