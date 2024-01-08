@@ -45,10 +45,10 @@ $symbols = array(
 				'full',
 				false,
 				array(
-					'class'           => 'mb-3 animate__animated animate__fadeInLeft',
-					'data-aos'        => 'fade-right',
-					'data-aos-offset' => $index * 300,
-					'loading'         => 'lazy',
+					'class'          => 'mb-3 animate__animated animate__fadeInLeft',
+					'data-aos'       => 'fade-right',
+					'data-aos-delay' => $index * 150,
+					'loading'        => 'lazy',
 				)
 			);
 			echo $symbol['body'];

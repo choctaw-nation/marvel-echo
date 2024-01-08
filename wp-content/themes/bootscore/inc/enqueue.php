@@ -28,6 +28,47 @@ function cno_scripts() {
 		array( 'strategy' => 'async' )
 	);
 
+	cno_enqueue_vendors();
+
+	$global = require_once get_template_directory() . '/dist/global.asset.php';
+	wp_enqueue_style(
+		'global',
+		get_template_directory_uri() . '/dist/global.css',
+		array( 'bootstrap', 'aos' ),
+		$global['version']
+	);
+	wp_enqueue_script(
+		'global',
+		get_template_directory_uri() . '/dist/global.js',
+		array( 'bootstrap', 'aos', 'lite-vimeo' ),
+		$global['version'],
+		array( 'strategy' => 'defer' )
+	);
+
+	// Style CSS
+	wp_enqueue_style(
+		'main',
+		get_stylesheet_uri(),
+		array( 'global' ),
+		wp_get_theme()->get( 'Version' )
+	);
+
+	cno_enqueue_gtm_scripts();
+	cno_remove_wordpress_styles(
+		array(
+			'classic-theme-styles',
+			'wp-block-library',
+			'dashicons',
+			'global-styles',
+			'wp-emoji-styles-inline',
+		)
+	);
+}
+
+add_action( 'wp_enqueue_scripts', 'cno_scripts' );
+
+/** Enqueue Vendor Script/Styles */
+function cno_enqueue_vendors() {
 	$bootstrap = require_once get_template_directory() . '/dist/vendors/bootstrap.asset.php';
 	wp_enqueue_style(
 		'bootstrap',
@@ -58,42 +99,15 @@ function cno_scripts() {
 		array( 'strategy' => 'defer' )
 	);
 
-	$global = require_once get_template_directory() . '/dist/global.asset.php';
-	wp_enqueue_style(
-		'global',
-		get_template_directory_uri() . '/dist/global.css',
-		array( 'bootstrap', 'aos' ),
-		$global['version']
-	);
+	$lite_vimeo = require_once get_template_directory() . '/dist/vendors/lite-vimeo.asset.php';
 	wp_enqueue_script(
-		'global',
-		get_template_directory_uri() . '/dist/global.js',
-		array( 'bootstrap', 'aos' ),
-		$global['version'],
+		'lite-vimeo',
+		get_template_directory_uri() . '/dist/vendors/lite-vimeo.js',
+		array(),
+		$lite_vimeo['version'],
 		array( 'strategy' => 'defer' )
 	);
-
-	// Style CSS
-	wp_enqueue_style(
-		'main',
-		get_stylesheet_uri(),
-		array( 'global' ),
-		wp_get_theme()->get( 'Version' )
-	);
-
-	cno_enqueue_gtm_scripts();
-	cno_remove_wordpress_styles(
-		array(
-			'classic-theme-styles',
-			'wp-block-library',
-			'dashicons',
-			'global-styles',
-			'wp-emoji-styles-inline',
-		)
-	);
 }
-
-add_action( 'wp_enqueue_scripts', 'cno_scripts' );
 
 /** Adds Google Tag Manager scripts to their appropriate places. */
 function cno_enqueue_gtm_scripts() {

@@ -1,6 +1,6 @@
 {
 	"name": "cno-marvel-echo",
-	"version": "1.0.3",
+	"version": "1.1.0",
 	"description": "Custom WP theme for CNO sites",
 	"prettier": "@wordpress/prettier-config",
 	"browserslist": [
@@ -15,6 +15,7 @@
 	"author": "Choctaw Nation of Oklahoma",
 	"license": "ISC",
 	"dependencies": {
+		"@slightlyoff/lite-vimeo": "^0.1.2",
 		"aos": "^2.3.4",
 		"bootstrap": "^5.3.2",
 		"swiper": "^11.0.5"

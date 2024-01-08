@@ -38,10 +38,10 @@ add_action( 'after_setup_theme', 'register_navwalker' );
 
 
 /**
- * Returns the `data-aos-offset` value for objects in a loop
+ * Returns the `data-aos-delay` value for objects in a loop
  *
  * @param int $index the loop's index
  */
-function get_offset( int $index ): string {
-	return 0 === $index ? '' : "data-aos-offset='" . ( $index * 300 ) . "'";
+function get_delay( int $index ): string {
+	return 0 === $index ? '' : "data-aos-delay='" . ( $index * 150 ) . "'";
 }

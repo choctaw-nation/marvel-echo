@@ -28,6 +28,7 @@ module.exports = {
 				global: `.${ THEME_DIR }/src/index.js`,
 				'vendors/bootstrap': `.${ THEME_DIR }/src/js/vendors/bootstrap.js`,
 				'vendors/aos': `.${ THEME_DIR }/src/js/vendors/aos.js`,
+				'vendors/lite-vimeo': `.${ THEME_DIR }/src/js/vendors/lite-vimeo.js`,
 			};
 			return entries;
 		},
