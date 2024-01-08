@@ -33,7 +33,7 @@ get_header();
 						array(
 							'src'         => 'https://player.vimeo.com/video/899924143?h=e063f2ed1b',
 							'headline'    => 'Chief Gary Batton',
-							'subheadline' => "Chief Gary Batton reflects on the significance of the Choctaw Nation's partnership with Marvel and the mutual desire to showcase Choctaw culture in a respectful
+							'subheadline' => "Chief Gary Batton reflects on the significance of the Choctaw Nation's partnership with Marvel Studios and the mutual desire to showcase Choctaw culture in a respectful
 							and meaningful way.",
 						),
 						array(
@@ -50,7 +50,6 @@ get_header();
 					);
 					?>
 					<?php foreach ( $interviews as $index => $interview ) : ?>
-					<?php $delay = 0 === $index ? '' : "animate__delay-{$index}s"; ?>
 					<div class="col mb-5">
 						<div class="<?php echo 'ratio ratio-16x9 mb-3 animate__animated animate__fadeInLeft ' . get_animation_delay_class( $index ); ?>">
 							<iframe loading="lazy" src="<?php echo $interview['src']; ?>" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"></iframe>
@@ -375,7 +374,7 @@ get_header();
 
 					<div class="col-12 col-lg-6">
 						<h2>How to Watch</h2>
-						<p>Echo can be streamed on Hulu and Disney+ beginning January 9, 2024.</p>
+						<p>Echo can be streamed on Hulu and Disney+ beginning January 10, 2024.</p>
 					</div>
 				</div>
 			</section>
