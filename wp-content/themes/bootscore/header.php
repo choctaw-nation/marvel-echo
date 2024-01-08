@@ -40,7 +40,7 @@
 <body <?php body_class( 'w-100 overflow-x-hidden' ); ?>>
 	<?php wp_body_open(); ?>
 	<div id="page" class="site">
-		<header id="masthead" class="site-header">
+		<header id="masthead" class="site-header overflow-x-hidden">
 			<div class="container-fluid h-100 px-0" style="background:url(/wp-content/uploads/2023/12/black-scratch-background.jpg); background-size: cover; --bs-gutter-x: 0;">
 				<div class="row h-100">
 					<div class="col">
@@ -117,7 +117,7 @@
 								aria-controls="offcanvas-navbar">
 							<svg xmlns="http://www.w3.org/2000/svg" style="--size:40px;width:var(--size);height:var(--size);" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
 								<path fill-rule="evenodd"
-										d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+									  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
 							</svg><span class="visually-hidden-focusable">Menu</span>
 						</button>
 					</div><!-- .header-actions -->

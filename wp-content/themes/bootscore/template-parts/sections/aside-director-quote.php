@@ -6,7 +6,7 @@
  */
 
 ?>
-<section class="container-fluid black-scratch-bg-right py-5 align-items-center justify-content-center d-flex" id="pullout-1">
+<section class="overflow-x-hidden container-fluid black-scratch-bg-right py-5 align-items-center justify-content-center d-flex" id="pullout-1">
 <div class="row">
 	<div class="col">
 		<div class="container">

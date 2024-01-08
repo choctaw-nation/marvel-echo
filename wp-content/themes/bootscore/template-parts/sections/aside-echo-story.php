@@ -6,7 +6,7 @@
  */
 
 ?>
-<section class="container-fluid black-scratch-bg-right py-1 align-items-center justify-content-center d-flex" id="echo-story">
+<section class="overflow-x-hidden container-fluid black-scratch-bg-right py-1 align-items-center justify-content-center d-flex" id="echo-story">
 	<div class="row">
 		<div class="col">
 			<div class="container">
