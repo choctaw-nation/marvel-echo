@@ -423,7 +423,7 @@ get_header();
 						<div class="container">
 							<div class="row d-flex align-items-center">
 								<div class="col-12 col-lg-5 position-relative">
-									<?php echo wp_get_attachment_image( 20, 'full', false, array( 'loading' => 'lazy' ) ); ?>
+									<?php echo wp_get_attachment_image( 47, 'full', false, array( 'loading' => 'lazy' ) ); ?>
 								</div>
 								<div class="col-12 col-lg-7 pullout-text">
 									<p class="mb-5">"It's so exciting to be able to premiere Echo and it was extremely meaningful to myself to have this screening in Choctaw Nation. One of
