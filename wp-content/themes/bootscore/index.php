@@ -26,6 +26,7 @@ get_header();
 					</div>
 				</div>
 			</section>
+
 			<section class="container" id="interviews">
 				<div class="row row-cols-1 row-cols-lg-3">
 					<?php
