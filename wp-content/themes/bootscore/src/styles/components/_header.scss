@@ -1,5 +1,17 @@
 @use "../abstracts/mixins" as m;
 
+.logo-container {
+	@include m.media-breakpoint-up(lg) {
+		height: 324px;
+	}
+	@include m.media-breakpoint-up(xl) {
+		height: 385px;
+	}
+	@include m.media-breakpoint-up(xxl) {
+		height: 446px;
+	}
+}
+
 #nav-main {
 	@include m.media-breakpoint-down(lg) {
 		.container {

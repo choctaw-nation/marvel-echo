@@ -55,14 +55,14 @@
 											true,
 											array(
 												'style'   => 'width:200px;max-width:80%',
-												'class'   => 'logo h-auto',
+												'class'   => 'logo--mobile h-auto',
 												'loading' => 'eager',
 											)
 										);
 										?>
 									</a>
 								</div>
-								<div class="col-12 col-lg-4 order-3 order-lg-2 z-0 px-0">
+								<div class="col-12 col-lg-4 order-3 order-lg-2 z-0 px-0 logo-container">
 									<?php
 										echo wp_get_attachment_image(
 											12,
@@ -70,7 +70,7 @@
 											true,
 											array(
 												'style'   => 'width:285px;',
-												'class'   => 'logo h-100 d-none d-lg-block object-fit-cover overflow-visible',
+												'class'   => 'logo--desktop h-100 d-none d-lg-block object-fit-cover overflow-visible',
 												'loading' => 'eager',
 											)
 										);

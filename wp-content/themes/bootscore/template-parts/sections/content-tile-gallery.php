@@ -24,17 +24,17 @@ $aside_photos = array(
 			<div class="container position-relative">
 				<div class="row h-100 py-4">
 					<?php foreach ( $aside_photos as $aside_photo ) : ?>
-					<div class="col-12 col-xl-6 position-relative mb-3">
+					<div class="col-12 col-lg-6 position-relative mb-3">
 						<?php
-									echo wp_get_attachment_image(
-										$aside_photo['id'],
-										'full',
-										false,
-										array(
-											'class'   => 'easter-egg-image border-bottom-0',
-											'loading' => 'lazy',
-										)
-									);
+						echo wp_get_attachment_image(
+							$aside_photo['id'],
+							'full',
+							false,
+							array(
+								'class'   => 'easter-egg-image border-bottom-0',
+								'loading' => 'lazy',
+							)
+						);
 						?>
 						<p class="easter-egg-overlay-text position-relative" style="right: 0; left: 0;"><?php echo $aside_photo['caption']; ?></p>
 					</div>
