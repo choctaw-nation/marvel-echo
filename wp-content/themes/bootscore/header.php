@@ -34,7 +34,7 @@
 	<link rel="preload" as="image" href="/wp-content/uploads/2023/12/echo-poster-slant.png">
 	<link rel="preload" as="image" href="/wp-content/uploads/2023/12/echo-poster-wide.jpg">
 	<link rel="preload" as="image" href="/wp-content/uploads/2023/12/echo-logo.png">
-	<link rel="stylesheet" href="https://use.typekit.net/rux8kck.css" preload>
+	<link rel="dns-prefetch" as='style' href="https://use.typekit.net/rux8kck.css" preload>
 </head>
 
 <body <?php body_class( 'w-100 overflow-x-hidden' ); ?>>

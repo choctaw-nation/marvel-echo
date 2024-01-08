@@ -13,8 +13,20 @@ defined( 'ABSPATH' ) || exit;
  * Enqueue scripts and styles
  */
 function cno_scripts() {
+	wp_enqueue_style(
+		'typekit',
+		'https://use.typekit.net/rux8kck.css',
+		array(),
+		null
+	);
 	// Custom Fontawesome Kit
-	wp_enqueue_script( 'fontawesome', 'https://kit.fontawesome.com/126b3b4955.js', array(), '1.0', array( 'strategy' => 'async' ) );
+	wp_enqueue_script(
+		'fontawesome',
+		'https://kit.fontawesome.com/126b3b4955.js',
+		array(),
+		'1.0',
+		array( 'strategy' => 'async' )
+	);
 
 	$bootstrap = require_once get_template_directory() . '/dist/vendors/bootstrap.asset.php';
 	wp_enqueue_style(
