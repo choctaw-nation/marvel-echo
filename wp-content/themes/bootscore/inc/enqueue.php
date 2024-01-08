@@ -17,7 +17,7 @@ function cno_scripts() {
 		'typekit',
 		'https://use.typekit.net/rux8kck.css',
 		array(),
-		null
+		wp_get_theme()->get( 'Version' )
 	);
 	// Custom Fontawesome Kit
 	wp_enqueue_script(
@@ -82,6 +82,14 @@ function cno_scripts() {
 	);
 
 	cno_enqueue_gtm_scripts();
+	cno_remove_wordpress_styles(
+		array(
+			'classic-theme-styles',
+			'wp-block-library',
+			'dashicons',
+			'global-styles',
+		)
+	);
 }
 
 add_action( 'wp_enqueue_scripts', 'cno_scripts' );
@@ -113,4 +121,15 @@ function cno_enqueue_gtm_scripts() {
 			<!-- End Google Tag Manager (noscript) -->';
 		}
 	);
+}
+
+/**
+ * Removes WP Core styles
+ *
+ * @param array $handles the styles to dequeue
+ */
+function cno_remove_wordpress_styles( array $handles ) {
+	foreach ( $handles as $handle ) {
+		wp_dequeue_style( $handle );
+	}
 }
