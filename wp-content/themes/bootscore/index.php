@@ -320,8 +320,10 @@ get_header();
 						<p>Marvel Studios screened the first two episodes of the upcoming series Echo during Choctaw Nation's annual powwow at The District Theater on November 3, 2023.</p>
 						<p>The episodes were presented by director Sydney Freeland, who was joined by Seth Fairchild, Executive Director of Cultural Services for Choctaw Nation, for a Q&A
 							conversation after the screening.</p>
-						<p class="h3"><a href="https://www.choctawnation.com/biskinik/news/marvel-studios-unveils-echo-at-choctaw-day-celebration/" target="_blank" rel="noreferrer noopener"
-							   class="btn btn-primary rounded-0 border-0"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> View Article</a></p>
+						<p class="h3">
+							<a href="https://www.choctawnation.com/biskinik/news/marvel-studios-unveils-echo-at-choctaw-day-celebration/" target="_blank" rel="noreferrer noopener"
+							   class="btn btn-primary rounded-0 border-0"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> View Article</a>
+						</p>
 					</div>
 				</div>
 
@@ -429,7 +431,7 @@ get_header();
 								<div class="col-12 col-lg-7 pullout-text">
 									<p class="mb-5">"It's so exciting to be able to premiere Echo and it was extremely meaningful to myself to have this screening in Choctaw Nation. One of
 										the things we're most excited about is being able to portray the Choctaw culture hopefully in an authentic and exciting way."</p>
-									<span class="h3">- Sydney Freeland, Director</span>
+									<span class="h3">&mdash; Sydney Freeland, Director</span>
 									<button type="button" class="btn btn-easter-egg" data-bs-toggle="modal" data-bs-target="#bowModal">
 										<i class="fa-kit fa-choctaw-echo-bow text-light"></i>
 									</button>
