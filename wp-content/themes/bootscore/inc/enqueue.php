@@ -32,12 +32,20 @@ function bootscore_scripts() {
 		$bootstrap['version'],
 		array( 'strategy' => 'defer' )
 	);
-	$global = require_once get_template_directory() . '/dist/global.asset.php';
 
+	$animate = require_once get_template_directory() . '/dist/vendors/animate.asset.php';
+	wp_enqueue_style(
+		'animate',
+		get_template_directory_uri() . '/dist/vendors/animate.css',
+		array(),
+		$animate['version']
+	);
+
+	$global = require_once get_template_directory() . '/dist/global.asset.php';
 	wp_enqueue_style(
 		'global',
 		get_template_directory_uri() . '/dist/global.css',
-		array( 'bootstrap' ),
+		array( 'bootstrap', 'animate' ),
 		$global['version']
 	);
 	wp_enqueue_script(
