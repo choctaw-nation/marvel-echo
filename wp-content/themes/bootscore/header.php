@@ -69,7 +69,6 @@
 											'full',
 											true,
 											array(
-												'style'   => 'width:285px;',
 												'class'   => 'logo--desktop h-100 d-none d-lg-block object-fit-cover overflow-visible',
 												'loading' => 'eager',
 											)
