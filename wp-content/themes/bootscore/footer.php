@@ -8,7 +8,7 @@
 ?>
 <footer>
 	<div class="bootscore-footer py-5" style="background:url(/wp-content/uploads/2023/12/black-scratch-background.jpg); background-size: cover;">
-		<div class="<?php echo bootscore_container_class(); ?>">
+		<div class="container">
 			<div class="row">
 				<div class="col-md-2 p-3">
 					<a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>">
