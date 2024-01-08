@@ -52,9 +52,8 @@ get_header();
 					<?php foreach ( $interviews as $index => $interview ) : ?>
 					<?php $delay = 0 === $index ? '' : "animate__delay-{$index}s"; ?>
 					<div class="col mb-5">
-						<div class="<?php echo "ratio ratio-16x9 mb-3 animate__animated animate__fadeInLeft {$delay}"; ?>">
-							<iframe loading="lazy" src="<?php echo $interview['src']; ?>" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
-									allowfullscreen></iframe>
+						<div class="<?php echo 'ratio ratio-16x9 mb-3 animate__animated animate__fadeInLeft ' . get_animation_delay_class( $index ); ?>">
+							<iframe loading="lazy" src="<?php echo $interview['src']; ?>" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"></iframe>
 						</div>
 						<h3><?php echo $interview['headline']; ?></h3>
 						<p><?php echo $interview['subheadline']; ?></p>
@@ -90,7 +89,7 @@ get_header();
 										'full',
 										false,
 										array(
-											'class'   => 'easter-egg-image',
+											'class'   => 'easter-egg-image border-bottom-0',
 											'loading' => 'lazy',
 										)
 									);
@@ -110,7 +109,7 @@ get_header();
 						<h2>LIGHTS, CAMERA, CULTURE!</h2>
 						<p>One of the many ways Marvel Studios honored Chahta culture in Echo is through the use of symbols, icons, and stories that are important to our people. As the story
 							progresses, look for Choctaw diamonds, swirls, artwork, and our seal in costumes and set dressings throughout each episode.</p>
-						<p><b>How many Choctaw symbols can you spot?</b></p>
+						<p><i>How many Choctaw symbols can you spot?</i></p>
 					</div>
 				</div>
 
@@ -125,27 +124,27 @@ get_header();
 						),
 						array(
 							'id'          => 30,
-							'body'        => '<p>The Biskinik is a special friend to the Chahta people. This little woodpecker was blessed by the Creator to live near our ancestors and warn them of danger by tapping out messages on trees. Today, our tribal newspaper bears its name in honor of the "little Choctaw news bird."</p><p>Learn more about the Biskinik newspaper and read the story of how this little bird became so special to our people.</p>',
-							'button_text' => '<i class="fa-solid fa-feather" aria-hidden="true"></i> Biskinik Paper',
+							'body'        => '<p>The Biskinik is a special friend to the Chahta people. This little woodpecker was blessed by the Creator to live near our ancestors and warn them of danger by tapping out messages on trees. Today, our tribal newspaper bears its name in honor of the "little Choctaw news bird."</p><p>Learn more about the Biskinik paper.</p>',
+							'button_text' => '<i class="fa-solid fa-feather" aria-hidden="true"></i> Biskinik',
 							'button_link' => 'https://www.choctawnation.com/biskinik/',
 						),
 						array(
 							'id'          => 31,
 							'body'        => '<p>Ishtaboli, or stickball, is an ancient game played by several Native American tribes. Originally, it helped our ancestors settle disputes and avoid war. Today, the game is played competitively and in exhibitions across the Choctaw Nation Reservation and beyond.</p><p>Learn more about this exciting and fast-paced game.</p>',
-							'button_text' => '<i class="fa-solid fa-lacrosse-stick-ball" aria-hidden="true"></i> Stickball Game',
+							'button_text' => '<i class="fa-solid fa-lacrosse-stick-ball" aria-hidden="true"></i> Stickball',
 							'button_link' => 'https://www.choctawnation.com/about/culture/traditions/stickball/',
 						),
 					);
 					?>
-					<?php foreach ( $symbols as $symbol ) : ?>
-					<div class="col mb-5 d-flex flex-column">
+					<?php foreach ( $symbols as $index => $symbol ) : ?>
+					<div class='col mb-5 d-flex flex-column'>
 						<?php
 						echo wp_get_attachment_image(
 							$symbol['id'],
 							'full',
 							false,
 							array(
-								'class'   => 'mb-3',
+								'class'   => 'mb-3 animate__animated animate__fadeInLeft ' . get_animation_delay_class( $index ),
 								'loading' => 'lazy',
 							)
 						);
