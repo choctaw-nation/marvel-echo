@@ -8,7 +8,7 @@
 @use "./components/swiper";
 @use "./components/easter-eggs";
 
-.black-scratch-bg-left {
+.black-scratch-bg-right {
 	position: relative;
 	margin-top: 8rem;
 	margin-bottom: 8rem;
@@ -16,9 +16,10 @@
 
 	&:after {
 		content: "";
-		left: 0;
-		top: 0;
 		position: absolute;
+		left: auto;
+		top: 0;
+		right: 0;
 		width: 60%;
 		height: 100%;
 		z-index: -1;
@@ -100,11 +101,38 @@
 	}
 }
 
-.black-scratch-bg-right {
-	@extend .black-scratch-bg-left;
+// .black-scratch-bg-right {
+// 	@extend .black-scratch-bg-left;
 
-	&:after {
-		left: auto;
-		right: 0;
+// 	&:after {
+// 		left: auto;
+// 		right: 0;
+// 	}
+// }
+
+%size {
+	position: absolute;
+	inset: 0;
+}
+.black-scratch-bg {
+	.scratch-bg {
+		--size: 0;
+		top: var(--size);
+		bottom: var(--size);
+		width: 100%;
+		@include m.media-breakpoint-up(lg) {
+			--size: 15%;
+			left: 20%;
+		}
+
+		&__color {
+			@extend %size;
+			background-color: var(--bs-primary);
+		}
+		&__image {
+			@extend %size;
+			mix-blend-mode: screen;
+			opacity: 1;
+		}
 	}
 }

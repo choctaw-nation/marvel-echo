@@ -34,9 +34,9 @@
 						<span data-aos="fade-down">
 							<small>Courtesy of <a href="https://press.disneyplus.com/media-kits/echo" target="_blank" rel="noopener noreferrer">Disney Media Kit</a></small>
 						</span>
-						<button type="button" class="btn btn-easter-egg" data-bs-toggle="modal" data-bs-target="#sunModal">
+						<!-- <button type="button" class="btn btn-easter-egg" data-bs-toggle="modal" data-bs-target="#sunModal">
 							<i class="fa-kit fa-choctaw-echo-sun-icon text-light"></i>
-						</button>
+						</button> -->
 					</div>
 				</div>
 			</div>
