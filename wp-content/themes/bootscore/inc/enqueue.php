@@ -33,25 +33,32 @@ function bootscore_scripts() {
 		array( 'strategy' => 'defer' )
 	);
 
-	$animate = require_once get_template_directory() . '/dist/vendors/animate.asset.php';
+	$aos = require_once get_template_directory() . '/dist/vendors/aos.asset.php';
 	wp_enqueue_style(
-		'animate',
-		get_template_directory_uri() . '/dist/vendors/animate.css',
+		'aos',
+		get_template_directory_uri() . '/dist/vendors/aos.css',
 		array(),
-		$animate['version']
+		$aos['version']
+	);
+	wp_enqueue_script(
+		'aos',
+		get_template_directory_uri() . '/dist/vendors/aos.js',
+		array(),
+		$aos['version'],
+		array( 'strategy' => 'defer' )
 	);
 
 	$global = require_once get_template_directory() . '/dist/global.asset.php';
 	wp_enqueue_style(
 		'global',
 		get_template_directory_uri() . '/dist/global.css',
-		array( 'bootstrap', 'animate' ),
+		array( 'bootstrap', 'aos' ),
 		$global['version']
 	);
 	wp_enqueue_script(
 		'global',
 		get_template_directory_uri() . '/dist/global.js',
-		array( 'bootstrap' ),
+		array( 'bootstrap', 'aos' ),
 		$global['version'],
 		array( 'strategy' => 'defer' )
 	);

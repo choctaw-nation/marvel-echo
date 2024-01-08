@@ -28,16 +28,16 @@
 				</div>
 
 				<div class="col-md-5 p-3 d-flex flex-column">
-					<a class='fs-3 mb-2' target="_blank" rel="noopener noreferrer" href="https://www.choctawnation.com/">Choctaw Nation of Oklahoma</a>
-					<a class='fs-3 mb-2' target="_blank" rel="noopener noreferrer" href="https://choctawculturalcenter.com/">Choctaw Cultural Center</a>
-					<a class='fs-3 mb-2' target="_blank" rel="noopener noreferrer" href="https://www.choctawnation.com/about/language/">Learn Choctaw Language</a>
-					<a class='fs-3 mb-2' target="_blank" rel="noopener noreferrer" href="https://www.choctawnation.com/about/culture/traditions/stickball/">Stickball</a>
+					<a class='fs-3 mb-2 text-white' target="_blank" rel="noopener noreferrer" href="https://www.choctawnation.com/">Choctaw Nation of Oklahoma</a>
+					<a class='fs-3 mb-2 text-white' target="_blank" rel="noopener noreferrer" href="https://choctawculturalcenter.com/">Choctaw Cultural Center</a>
+					<a class='fs-3 mb-2 text-white' target="_blank" rel="noopener noreferrer" href="https://www.choctawnation.com/about/language/">Learn Choctaw Language</a>
+					<a class='fs-3 mb-2 text-white' target="_blank" rel="noopener noreferrer" href="https://www.choctawnation.com/about/culture/traditions/stickball/">Stickball</a>
 				</div>
 
 				<div class="col-md-5 p-3 d-flex flex-column">
-					<a class='fs-3 mb-2' target="_blank" rel="noopener noreferrer" href="https://www.marvel.com/">Marvel</a>
-					<a class='fs-3 mb-2' target="_blank" rel="noopener noreferrer" href="https://www.marvel.com/characters/echo-maya-lopez/in-comics">ECHO: Maya Lopez</a>
-					<a class='fs-3 mb-2' target="_blank" rel="noopener noreferrer" href="https://ondisneyplus.disney.com/show/echo">ECHO on Disney Plus</a>
+					<a class='fs-3 mb-2 text-white' target="_blank" rel="noopener noreferrer" href="https://www.marvel.com/">Marvel</a>
+					<a class='fs-3 mb-2 text-white' target="_blank" rel="noopener noreferrer" href="https://www.marvel.com/characters/echo-maya-lopez/in-comics">ECHO: Maya Lopez</a>
+					<a class='fs-3 mb-2 text-white' target="_blank" rel="noopener noreferrer" href="https://ondisneyplus.disney.com/show/echo">ECHO on Disney Plus</a>
 				</div>
 			</div>
 		</div>

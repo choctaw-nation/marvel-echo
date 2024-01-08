@@ -1,0 +1,26 @@
+@use "../abstracts/mixins" as m;
+
+#nav-main {
+	@include m.media-breakpoint-down(lg) {
+		.container {
+			max-width: 100%;
+		}
+	}
+}
+
+.header-actions {
+	width: auto;
+	@include m.media-breakpoint-down(lg) {
+		width: 100%;
+	}
+}
+
+.navbar-collapse {
+	&.show,
+	&.collapsing {
+		@include m.media-breakpoint-down(lg) {
+			background: black;
+			color: white;
+		}
+	}
+}

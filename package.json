@@ -15,7 +15,6 @@
 	"author": "Choctaw Nation of Oklahoma",
 	"license": "ISC",
 	"dependencies": {
-		"animate.css": "^4.1.1",
 		"aos": "^2.3.4",
 		"bootstrap": "^5.3.2",
 		"swiper": "^11.0.5"

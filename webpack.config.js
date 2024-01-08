@@ -27,7 +27,7 @@ module.exports = {
 			const entries = {
 				global: `.${ THEME_DIR }/src/index.js`,
 				'vendors/bootstrap': `.${ THEME_DIR }/src/js/vendors/bootstrap.js`,
-				'vendors/animate': `.${ THEME_DIR }/src/styles/vendors/animate.scss`,
+				'vendors/aos': `.${ THEME_DIR }/src/js/vendors/aos.js`,
 			};
 			return entries;
 		},
