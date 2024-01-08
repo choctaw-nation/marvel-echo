@@ -53,7 +53,7 @@ function cno_scripts() {
 		wp_get_theme()->get( 'Version' )
 	);
 
-	cno_enqueue_gtm_scripts();
+	// cno_enqueue_gtm_scripts();
 	cno_remove_wordpress_styles(
 		array(
 			'classic-theme-styles',
