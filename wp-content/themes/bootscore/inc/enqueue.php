@@ -88,6 +88,7 @@ function cno_scripts() {
 			'wp-block-library',
 			'dashicons',
 			'global-styles',
+			'wp-emoji-styles-inline',
 		)
 	);
 }
