@@ -16,8 +16,9 @@
 					'full',
 					false,
 					array(
-						'loading' => 'lazy',
-						'class'   => 'mb-3',
+						'loading'  => 'lazy',
+						'class'    => 'mb-3',
+						'data-aos' => 'fade-right',
 					)
 				);
 				?>

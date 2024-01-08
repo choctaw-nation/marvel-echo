@@ -29,7 +29,7 @@ $interviews = array(
 	<div class="row row-cols-1 row-cols-lg-3">
 		<?php foreach ( $interviews as $index => $interview ) : ?>
 		<div class="col mb-5">
-			<div class="<?php echo 'ratio ratio-16x9 mb-3 animate__animated animate__fadeInLeft ' . get_animation_delay_class( $index ); ?>">
+			<div class="ratio ratio-16x9 mb-3" data-aos='fade-right' <?php echo get_offset( $index ); ?>>
 				<iframe loading="lazy" src="<?php echo $interview['src']; ?>" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"></iframe>
 			</div>
 			<h3><?php echo $interview['headline']; ?></h3>

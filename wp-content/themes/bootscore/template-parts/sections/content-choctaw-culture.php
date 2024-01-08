@@ -45,35 +45,38 @@ $symbols = array(
 				'full',
 				false,
 				array(
-					'class'   => 'mb-3 animate__animated animate__fadeInLeft ' . get_animation_delay_class( $index ),
-					'loading' => 'lazy',
+					'class'           => 'mb-3 animate__animated animate__fadeInLeft',
+					'data-aos'        => 'fade-right',
+					'data-aos-offset' => $index * 300,
+					'loading'         => 'lazy',
 				)
 			);
 			echo $symbol['body'];
 			?>
 			<p class="h3 mt-auto">
 				<a href="<?php echo $symbol['button_link']; ?>" target="_blank" rel="noreferrer noopener"
-				   class="btn btn-primary btn-lg rounded-0 border-0"><?php echo $symbol['button_text']; ?></a>
+					class="btn btn-primary btn-lg rounded-0 border-0"><?php echo $symbol['button_text']; ?></a>
 			</p>
 		</div>
 		<?php endforeach; ?>
 	</div>
 
-	<div class="row">
-		<div class="col-12 col-lg-5 order-1 order-lg-2">
+	<div class="row flex-row-reverse">
+		<div class="col-12 col-lg-5 ">
 			<?php
 			echo wp_get_attachment_image(
 				32,
 				'full',
 				false,
 				array(
-					'class'   => 'mb-3',
-					'loading' => 'lazy',
+					'class'    => 'mb-3',
+					'data-aos' => 'fade-right',
+					'loading'  => 'lazy',
 				)
 			);
 			?>
 		</div>
-		<div class="col-12 col-lg-7 order-2 order-lg-1">
+		<div class="col-12 col-lg-7">
 			<p>Traditional Choctaw dress incorporates some of our most important iconography. The diamond pattern represents the diamondback rattlesnake, who protected our
 				ancestors' crops. These snakes are not aggressive, but they stand ready to attack if provoked, traits that are also present in the Chahta people.</p>
 			<p>Learn more about the symbols we use in our traditional regalia.</p>

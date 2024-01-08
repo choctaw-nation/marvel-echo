@@ -17,7 +17,10 @@
 							19,
 							'full',
 							false,
-							array( 'loading' => 'lazy' )
+							array(
+								'loading'  => 'lazy',
+								'data-aos' => 'fade-right',
+							)
 						);
 						?>
 					</div>
@@ -28,7 +31,7 @@
 							up with
 							her in her hometown. She must face her past, reconnect with her Native American roots and embrace the meaning of family and community if she ever
 							hopes to move forward.</p>
-						<span>
+						<span data-aos="fade-down">
 							<small>Courtesy of <a href="https://press.disneyplus.com/media-kits/echo" target="_blank" rel="noopener noreferrer">Disney Media Kit</a></small>
 						</span>
 						<button type="button" class="btn btn-easter-egg" data-bs-toggle="modal" data-bs-target="#sunModal">

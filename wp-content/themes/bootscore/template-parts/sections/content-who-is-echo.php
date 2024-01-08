@@ -27,9 +27,16 @@ $photos = array(
 		<div class="col-12 col-lg-6 order-1 order-lg-2">
 			<div class="container-fluid">
 				<div class="row">
-					<?php foreach ( $photos as $photo ) : ?>
-					<div class="col mb-4">
-						<?php echo wp_get_attachment_image( $photo['id'], 'full', false, array( 'loading' => 'lazy' ) ); ?>
+					<?php foreach ( $photos as $index => $photo ) : ?>
+					<div class="col mb-4" data-aos='fade-right' <?php echo get_offset( $index ); ?>>
+						<?php
+						echo wp_get_attachment_image(
+							$photo['id'],
+							'full',
+							false,
+							array( 'loading' => 'lazy' )
+						);
+						?>
 						<small>Source: <?php echo $photo['source']; ?></small>
 					</div>
 					<?php endforeach; ?>

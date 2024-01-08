@@ -8,8 +8,8 @@
 ?>
 <section class="container" id="teri-billy">
 	<div class="row">
-		<div class="col-12 col-lg-6 order-1 order-lg-2">
-			<div class="ratio ratio-16x9 mb-3">
+		<div class="col-12 col-lg-6 order-1 order-lg-2 d-flex flex-column justify-content-center">
+			<div class="ratio ratio-16x9 mb-3" data-aos='fade-down'>
 				<iframe loading="lazy" src="https://player.vimeo.com/video/899934703?h=6df7bf7874" width="640" height="360" frameborder="0"
 						allow="autoplay; fullscreen; picture-in-picture"></iframe>
 			</div>
