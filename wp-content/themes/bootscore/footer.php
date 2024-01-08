@@ -44,7 +44,7 @@
 	</div>
 
 	<div class="bootscore-info bg-dark text-light py-2 text-center">
-		<div class="<?php echo bootscore_container_class(); ?> justify-content-center d-flex">
+		<div class="container justify-content-center d-flex">
 
 			<p class="bootscore-copyright m-0 p-0 w-75"><span class="cr-symbol">&copy;</span>&nbsp;<?php echo gmdate( 'Y' ); ?> Choctaw Nation of Oklahoma. All Rights Reserved.</p>
 		</div>
