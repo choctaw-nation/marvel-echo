@@ -18,10 +18,15 @@
 			max-width: 100%;
 		}
 	}
+
+	a:focus {
+		text-decoration: underline;
+	}
 }
 
 .header-actions {
 	width: auto;
+
 	@include m.media-breakpoint-down(lg) {
 		width: 100%;
 	}

@@ -40,7 +40,7 @@
 				);
 				?>
 			</div>
-			<div class="col-12 col-lg-6 text-white my-5 py-5">
+			<div class="col-12 col-lg-6 text-white my-5 p-5">
 				<h2 class="text-white">The Story of ECHO</h2>
 				<p class="mb-5 text-shadow-subtle">Streaming exclusively on Disney+ and Hulu, the origin story of Echo revisits Maya Lopez, whose ruthless behavior in New
 					York
@@ -48,7 +48,7 @@
 					up with
 					her in her hometown. She must face her past, reconnect with her Native American roots and embrace the meaning of family and community if she ever
 					hopes to move forward.</p>
-				<small data-aos="fade-down" class="d-inline-block bg-white border border-3 border-black p-3 text-black ">Courtesy of <a href="https://press.disneyplus.com/media-kits/echo"
+				<small data-aos="fade-down" class="quote-attribution bg-white border border-3 border-black p-3 text-black">Courtesy of <a href="https://press.disneyplus.com/media-kits/echo"
 						target="_blank" rel="noopener noreferrer">Disney Media Kit</a></small>
 				<button type="button" class="btn btn-easter-egg position-absolute p-0 border-0" data-bs-toggle="modal" data-bs-target="#sunModal">
 					<i class="fa-kit fa-choctaw-echo-sun-icon text-light"></i>

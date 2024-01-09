@@ -4,18 +4,21 @@
 	position: absolute;
 	inset: 0;
 }
+
 .black-scratch-bg {
 	.scratch-bg {
 		--size: 0;
 		top: var(--size);
 		bottom: var(--size);
 		width: 100%;
+
 		@include m.media-breakpoint-up(lg) {
 			--size: 5%;
-			left: 20%;
+			left: 40%;
 		}
+
 		@include m.media-breakpoint-up(xl) {
-			--size: 15%;
+			--size: 10%;
 		}
 
 		&__color {
@@ -27,6 +30,10 @@
 			mix-blend-mode: screen;
 		}
 	}
+}
+
+.quote-attribution {
+	width: fit-content;
 }
 
 .btn-easter-egg {
@@ -43,13 +50,18 @@
 		right: -40px;
 	}
 
-	@include m.media-breakpoint-up(xl) {
+	@include m.media-breakpoint-up(lg) {
 		top: -20px;
-		right: -40px;
+	}
+
+	@include m.media-breakpoint-up(xl) {
+		top: 10px;
+		right: -20px;
 	}
 
 	@include m.media-breakpoint-up(xxl) {
 		top: 50px;
+		right: -40px;
 	}
 
 	&:hover,
