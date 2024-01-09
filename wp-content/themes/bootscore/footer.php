@@ -7,7 +7,20 @@
 
 ?>
 <footer>
-	<div class="bootscore-footer py-5" style="background:url(/wp-content/uploads/2023/12/black-scratch-background.jpg); background-size: cover;">
+	<div class="bootscore-footer py-5 overflow-hidden position-relative">
+		<div class="bg-container position-absolute overflow-hidden z-n1 top-0 w-100 h-100">
+			<?php
+			echo wp_get_attachment_image(
+				7,
+				'full',
+				false,
+				array(
+					'loading' => 'lazy',
+					'class'   => 'h-100 w-100 object-fit-cover',
+				)
+			);
+			?>
+		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-2 p-3">
@@ -45,15 +58,11 @@
 
 	<div class="bootscore-info bg-dark text-light py-2 text-center">
 		<div class="container justify-content-center d-flex">
-
 			<p class="bootscore-copyright m-0 p-0 w-75"><span class="cr-symbol">&copy;</span>&nbsp;<?php echo gmdate( 'Y' ); ?> Choctaw Nation of Oklahoma. All Rights Reserved.</p>
 		</div>
 	</div>
 
 </footer>
-
-<!-- To top button -->
-<a href="#" class="btn btn-primary shadow top-button position-fixed zi-1020"><i class="fa-solid fa-chevron-up"></i><span class="visually-hidden-focusable">To top</span></a>
 
 </div><!-- #page -->
 
