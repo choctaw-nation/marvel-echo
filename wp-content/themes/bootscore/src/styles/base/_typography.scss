@@ -37,3 +37,13 @@ small {
 	font-weight: 400;
 	font-style: italic;
 }
+
+.font-comic {
+	font-family: "classic-comic", sans-serif;
+	font-style: italic;
+}
+
+.text-shadow-subtle {
+	--size: 1.8px;
+	text-shadow: var(--size) var(--size) calc(2px + var(--size)) black;
+}

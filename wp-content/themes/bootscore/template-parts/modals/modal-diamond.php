@@ -40,12 +40,12 @@
 								'full',
 								false,
 								array(
-									'class'   => 'easter-egg-image pb-5',
+									'class'   => 'border border-3 border-black border-bottom-0',
 									'loading' => 'lazy',
 								)
 							);
 							?>
-							<p class="easter-egg-overlay-text"><?php echo $modal_image['caption']; ?></p>
+							<p class="border border-3 border-black font-comic bg-white px-4 py-1"><?php echo $modal_image['caption']; ?></p>
 						</div>
 						<?php endforeach; ?>
 					</div>

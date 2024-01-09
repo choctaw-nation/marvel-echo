@@ -40,8 +40,21 @@
 <body <?php body_class( 'w-100 overflow-x-hidden' ); ?>>
 	<?php wp_body_open(); ?>
 	<div id="page" class="site">
-		<header id="masthead" class="site-header overflow-x-hidden">
-			<div class="container-fluid h-100 px-0" style="background:url(/wp-content/uploads/2023/12/black-scratch-background.jpg); background-size: cover; --bs-gutter-x: 0;">
+		<header id="masthead" class="site-header">
+			<div class="container-fluid h-100 px-0 position-relative overflow-y-hidden">
+				<div class="bg-container position-absolute overflow-hidden z-n1 top-0 w-100 h-100">
+					<?php
+					echo wp_get_attachment_image(
+						7,
+						'full',
+						false,
+						array(
+							'loading' => 'eager',
+							'class'   => 'h-100 w-100 object-fit-cover',
+						)
+					);
+					?>
+				</div>
 				<div class="row h-100">
 					<div class="col">
 						<div class="container-fluid container-lg h-100">
