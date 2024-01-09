@@ -21,22 +21,22 @@ $aside_photos = array(
 <section class="container-fluid bg-dark" id="tile-gallery">
 	<div class="row d-flex flex-row">
 		<div class="col">
-			<div class="container position-relative">
+			<div class="container">
 				<div class="row h-100 py-4">
 					<?php foreach ( $aside_photos as $aside_photo ) : ?>
-					<div class="col-12 col-lg-6 position-relative mb-3">
+					<div class="col-12 col-lg-6 mb-3">
 						<?php
 						echo wp_get_attachment_image(
 							$aside_photo['id'],
 							'full',
 							false,
 							array(
-								'class'   => 'easter-egg-image border-bottom-0',
+								'class'   => 'border border-3 border-black border-bottom-0',
 								'loading' => 'lazy',
 							)
 						);
 						?>
-						<p class="easter-egg-overlay-text position-relative" style="right: 0; left: 0;"><?php echo $aside_photo['caption']; ?></p>
+						<p class="bg-white border border-3 border-black px-4 py-1 font-comic"><?php echo $aside_photo['caption']; ?></p>
 					</div>
 					<?php endforeach; ?>
 				</div>
