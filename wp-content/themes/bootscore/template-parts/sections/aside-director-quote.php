@@ -53,6 +53,5 @@
 	</div>
 </aside>
 
-
 <?php
 get_template_part( 'template-parts/modals/modal', 'bow' );
