@@ -15,8 +15,8 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Load required files
  */
-require_once 'inc/bootscore/theme-setup.php';             // Theme setup and custom theme supports
-require_once 'inc/bootscore/enqueue.php';                 // Enqueue scripts and styles
+require_once get_template_directory() . '/inc/bootscore/theme-setup.php';             // Theme setup and custom theme supports
+require_once get_template_directory() . '/inc/bootscore/enqueue.php';                 // Enqueue scripts and styles
 
 
 /**
@@ -26,7 +26,7 @@ require_once 'inc/bootscore/enqueue.php';                 // Enqueue scripts and
  */
 if ( ! function_exists( 'register_navwalker' ) ) :
 	function register_navwalker() {
-		require_once 'inc/bootscore/class-bootstrap-5-navwalker.php';
+		require_once get_template_directory() . '/inc/bootscore/class-bootstrap-5-navwalker.php';
 		// Register Menus
 		register_nav_menu( 'main-menu', 'Main menu' );
 		register_nav_menu( 'footer-menu', 'Footer menu' );
