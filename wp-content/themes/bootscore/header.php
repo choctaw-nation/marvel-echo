@@ -31,9 +31,6 @@
 	<?php wp_head(); ?>
 
 	<link rel="preload" as="image" href="https://echo.choctawnation.com/wp-content/uploads/2023/12/black-scratch-background.webp">
-	<link rel="preload" as="image" href="/wp-content/uploads/2023/12/echo-poster-slant.png">
-	<link rel="preload" as="image" href="/wp-content/uploads/2023/12/echo-poster-wide.jpg">
-	<link rel="preload" as="image" href="/wp-content/uploads/2023/12/echo-logo.png">
 	<link rel="dns-prefetch" as='style' href="//use.typekit.net/rux8kck.css">
 </head>
 
