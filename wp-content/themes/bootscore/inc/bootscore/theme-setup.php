@@ -49,26 +49,6 @@ if ( ! function_exists( 'bootscore_setup' ) ) :
 		* @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		*/
 		add_theme_support( 'post-thumbnails' );
-
-		/*
-		* Switch default core markup for search form, comment form, and comments
-		* to output valid HTML5.
-		*/
-		// add_theme_support(
-		// 'html5',
-		// array(
-		// 'comment-form',
-		// 'comment-list',
-		// 'search-form',
-		// 'gallery',
-		// 'caption',
-		// 'script',
-		// 'style',
-		// )
-		// );
-
-		// Add theme support for selective refresh for widgets.
-		// add_theme_support( 'customize-selective-refresh-widgets' );
 	}
 endif;
 add_action( 'after_setup_theme', 'bootscore_setup' );

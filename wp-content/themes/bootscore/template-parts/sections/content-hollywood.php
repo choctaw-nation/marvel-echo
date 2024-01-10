@@ -28,23 +28,24 @@
 			<div class="swiper w-100 h-100">
 				<div class="swiper-wrapper">
 					<?php
-					$swiper_slide_image_ids = array( 48, 49, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74 );
+					$swiper_slide_image_ids = cno_get_gallery_image_ids();
 					$content                = '';
 					foreach ( $swiper_slide_image_ids as $image_id ) {
-						$content .= "<div class='swiper-slide text-center d-flex justify-content-center align-items-center bg-white'><a href='" . wp_get_attachment_url( $image_id ) . "'>" . wp_get_attachment_image(
-							$image_id,
-							'medium',
-							false,
-							array(
-								'loading' => 'lazy',
-								'class'   => 'object-fit-cover',
-							)
-						) . '</a></div>';
+						$content .= "<div class='swiper-slide text-center d-flex justify-content-center align-items-center bg-white'><a href='" . wp_get_attachment_url( $image_id ) . "'>" .
+							wp_get_attachment_image(
+								$image_id,
+								'medium',
+								false,
+								array(
+									'loading' => 'lazy',
+									'class'   => 'object-fit-cover',
+								)
+							) . '</a></div>';
 					}
 					if ( function_exists( 'slb_activate' ) ) {
 						$content = slb_activate( $content );
 					}
-								echo $content;
+					echo $content;
 					?>
 				</div>
 			</div>
