@@ -30,7 +30,7 @@
 	<meta name="theme-color" content="#ffffff">
 	<?php wp_head(); ?>
 
-	<link rel="preload" as="image" href="/wp-content/uploads/2023/12/black-scratch-background.jpg">
+	<link rel="preload" as="image" href="https://echo.choctawnation.com/wp-content/uploads/2023/12/black-scratch-background.webp">
 	<link rel="preload" as="image" href="/wp-content/uploads/2023/12/echo-poster-slant.png">
 	<link rel="preload" as="image" href="/wp-content/uploads/2023/12/echo-poster-wide.jpg">
 	<link rel="preload" as="image" href="/wp-content/uploads/2023/12/echo-logo.png">
@@ -43,7 +43,6 @@
 		<header id="masthead" class="site-header">
 			<div class="container-fluid h-100 px-0 position-relative overflow-y-hidden">
 				<div class="scratch-bg__image"></div>
-				<!-- <div class="bg-container position-absolute overflow-hidden z-n1 top-0 w-100 h-100"></div> -->
 				<div class="row h-100">
 					<div class="col">
 						<div class="container-fluid container-lg h-100">
