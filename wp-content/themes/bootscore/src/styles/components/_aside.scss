@@ -5,28 +5,31 @@
 	inset: 0;
 }
 
-.black-scratch-bg {
-	.scratch-bg {
-		--size: 0;
-		top: var(--size);
-		bottom: var(--size);
-		width: 100%;
+.scratch-bg {
+	--size: 0;
+	top: var(--size);
+	bottom: var(--size);
+	width: 100%;
 
-		@include m.media-breakpoint-up(lg) {
-			--size: 5%;
-			left: 40%;
-		}
+	@include m.media-breakpoint-up(lg) {
+		--size: 5%;
+		left: 40%;
+	}
 
-		@include m.media-breakpoint-up(xl) {
-			--size: 10%;
-		}
+	@include m.media-breakpoint-up(xl) {
+		--size: 10%;
+	}
 
-		&__color {
-			@extend %size;
-			background-color: var(--bs-primary);
-		}
-		&__image {
-			@extend %size;
+	&__color {
+		@extend %size;
+		background-color: var(--bs-primary);
+	}
+	&__image {
+		@extend %size;
+		background-image: url(https://echo.choctawnation.com/wp-content/uploads/2023/12/black-scratch-background.webp);
+		background-size: contain;
+
+		.black-scratch-bg & {
 			mix-blend-mode: screen;
 		}
 	}

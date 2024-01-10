@@ -9,19 +9,7 @@
 <aside class="black-scratch-bg py-5 position-relative overflow-x-hidden" id='chiefs-quote'>
 	<div class="scratch-bg z-1 position-absolute" data-aos='fade-left'>
 		<div class="scratch-bg__color"></div>
-		<div class="scratch-bg__image">
-			<?php
-			echo wp_get_attachment_image(
-				7,
-				'full',
-				false,
-				array(
-					'loading' => 'lazy',
-					'class'   => 'h-100 w-100 object-fit-cover',
-				)
-			);
-			?>
-		</div>
+		<div class="scratch-bg__image"></div>
 	</div>
 	<div class="container position-relative z-2">
 		<div class="row align-items-center">

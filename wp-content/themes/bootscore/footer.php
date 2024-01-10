@@ -8,19 +8,7 @@
 ?>
 <footer>
 	<div class="bootscore-footer py-5 overflow-hidden position-relative">
-		<div class="bg-container position-absolute overflow-hidden z-n1 top-0 w-100 h-100">
-			<?php
-			echo wp_get_attachment_image(
-				7,
-				'full',
-				false,
-				array(
-					'loading' => 'lazy',
-					'class'   => 'h-100 w-100 object-fit-cover',
-				)
-			);
-			?>
-		</div>
+		<div class="scratch-bg__image z-n1"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-2 p-3">

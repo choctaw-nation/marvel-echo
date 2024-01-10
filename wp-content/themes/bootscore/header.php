@@ -42,19 +42,8 @@
 	<div id="page" class="site">
 		<header id="masthead" class="site-header">
 			<div class="container-fluid h-100 px-0 position-relative overflow-y-hidden">
-				<div class="bg-container position-absolute overflow-hidden z-n1 top-0 w-100 h-100">
-					<?php
-					echo wp_get_attachment_image(
-						7,
-						'full',
-						false,
-						array(
-							'loading' => 'eager',
-							'class'   => 'h-100 w-100 object-fit-cover',
-						)
-					);
-					?>
-				</div>
+				<div class="scratch-bg__image"></div>
+				<!-- <div class="bg-container position-absolute overflow-hidden z-n1 top-0 w-100 h-100"></div> -->
 				<div class="row h-100">
 					<div class="col">
 						<div class="container-fluid container-lg h-100">
