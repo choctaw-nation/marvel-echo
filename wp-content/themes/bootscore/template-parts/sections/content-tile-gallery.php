@@ -8,7 +8,7 @@
 $aside_photos = array(
 	array(
 		'id'      => 45,
-		'caption' => 'Choctaw Nation consultants and Choctaw artist and writer Steven Paul Judd
+		'caption' => 'Choctaw Nation consultants and artist and writer Steven Paul Judd
 	pose on set during the first day of filming.',
 	),
 	array(
