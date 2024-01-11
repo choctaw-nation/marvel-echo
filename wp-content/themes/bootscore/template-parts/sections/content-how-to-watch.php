@@ -26,7 +26,7 @@
 		</div>
 		<div class="col-12 col-lg-6">
 			<h2>How to Watch</h2>
-			<p>Echo can be streamed on Hulu and Disney+ beginning January 9, 2024.</p>
+			<p>All episodes of Echo are now streaming on Hulu and Disney+.</p>
 		</div>
 	</div>
 </section>
