@@ -38,7 +38,7 @@
 	<?php wp_body_open(); ?>
 	<div id="page" class="site">
 		<header id="masthead" class="site-header">
-			<div class="container-fluid h-100 px-0 position-relative overflow-y-hidden">
+			<div class="container-fluid h-100 px-0 position-relative overflow-hidden">
 				<div class="scratch-bg__image"></div>
 				<div class="row h-100">
 					<div class="col">
