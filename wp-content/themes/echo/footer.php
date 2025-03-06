@@ -7,65 +7,90 @@
 
 ?>
 
-<footer class="footer text-bg-primary py-3">
-	<div class="container d-flex flex-column row-gap-4">
-		<div class="row">
-			<?php
-			if ( has_nav_menu( 'footer_menu' ) ) {
-				wp_nav_menu(
-					array(
-						'theme_location'  => 'footer_menu',
-						'menu_class'      => 'footer-nav list-unstyled navbar-nav flex-row',
-						'container'       => 'nav',
-						'container_class' => 'navbar',
-						'depth'           => 1,
-					)
-				);
-			}
-			?>
-		</div>
-		<div class="row">
-			<div class="col-4">
-				<a href="<?php echo esc_url( site_url() ); ?>" class="logo">
-					<figure class="logo-img d-inline-block">
-						<span aria-label="to Home Page">
-							<?php echo bloginfo( 'name' ); ?>
-						</span>
-					</figure>
-				</a>
-				<div class="row">
-					<div class="social-icons">
+<footer>
+	<div class="py-5 overflow-hidden position-relative">
+		<div class="scratch-bg__image z-n1"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 p-3">
+					<a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>">
 						<?php
-						$socials = array(
+						echo wp_get_attachment_image(
+							8,
+							'full',
+							true,
 							array(
-								'icon_class' => 'fa-brands fa-facebook-f',
-								'href'       => 'https://facebook.com/',
-								'aria-label' => 'Follow Us on Facebook',
-							),
-							array(
-								'icon_class' => 'fa-brands fa-instagram',
-								'href'       => 'https://instagram.com',
-								'aria-label' => 'Follow Us on Instagram',
-							),
+								'style'   => 'height:200px',
+								'class'   => 'logo',
+								'loading' => 'lazy',
+							)
 						);
 						?>
-						<?php foreach ( $socials as $social ) : ?>
-						<a href="<?php echo $social['href']; ?>" class="social" target="_blank" rel="noopener noreferrer" aria-label="<?php echo $social['aria-label']; ?>">
-							<i class="<?php echo "text-white fa-3x {$social['icon_class']}"; ?>"></i>
-						</a>
-						<?php endforeach; ?>
-					</div>
+					</a>
+				</div>
+
+				<div class="col-md-5 p-3 d-flex flex-column">
+					<?php
+					$links = array(
+						array(
+							'title' => 'Choctaw Nation of Oklahoma',
+							'href'  => 'https://www.choctawnation.com/',
+						),
+						array(
+							'title' => 'Choctaw Cultural Center',
+							'href'  => 'https://choctawculturalcenter.com/',
+						),
+						array(
+							'title' => 'Learn Choctaw Language',
+							'href'  => 'https://www.choctawnation.com/about/language/',
+						),
+						array(
+							'title' => 'Stickball',
+							'href'  => 'https://www.choctawnation.com/about/culture/traditions/stickball/',
+						),
+					);
+
+					foreach ( $links as $footer_link ) {
+						echo '<a class="fs-3 mb-2 text-white" target="_blank" rel="noopener noreferrer" href="' . esc_url( $footer_link['href'] ) . '">' . esc_html( $footer_link['title'] ) . '</a>';
+					}
+					?>
+				</div>
+				<div class="col-md-5 p-3 d-flex flex-column">
+					<?php
+					$links = array(
+						array(
+							'title' => 'Marvel',
+							'href'  => 'https://www.marvel.com/',
+						),
+						array(
+							'title' => 'ECHO: Maya Lopez',
+							'href'  => 'https://www.marvel.com/characters/echo-maya-lopez/in-comics',
+						),
+						array(
+							'title' => 'ECHO on Disney Plus',
+							'href'  => 'https://ondisneyplus.disney.com/show/echo',
+						),
+					);
+
+					foreach ( $links as $footer_link ) {
+						echo '<a class="fs-3 mb-2 text-white" target="_blank" rel="noopener noreferrer" href="' . esc_url( $footer_link['href'] ) . '">' . esc_html( $footer_link['title'] ) . '</a>';
+					}
+					?>
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col text-center" id="copyright">
-				<?php echo '&copy;&nbsp;' . date( 'Y' ) . '&nbsp;Choctaw Nation of Oklahoma'; // phpcs:ignore WordPress.DateTime.RestrictedFunctions.date_date ?>
-			</div>
+	</div>
+
+	<div class="text-bg-dark text-light py-2 text-center">
+		<div class="container justify-content-center d-flex">
+			<p class="m-0 p-0 w-75">&copy;&nbsp;<?php echo date( 'Y' ); // phpcs:ignore WordPress.DateTime.RestrictedFunctions.date_date ?> Choctaw Nation of Oklahoma. All Rights Reserved.</p>
 		</div>
 	</div>
+
 </footer>
+
 <?php wp_footer(); ?>
+
 </body>
 
 </html>

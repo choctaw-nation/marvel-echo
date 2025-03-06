@@ -5,7 +5,7 @@
  * @package ChoctawNation
  */
 
-use ChoctawNation\Navwalker;
+use ChoctawNation\Simple_Navwalker;
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +16,7 @@ use ChoctawNation\Navwalker;
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php wp_head(); ?>
-	<link rel="preload" as="image" href="https://echo.choctawnation.com/wp-content/uploads/2023/12/black-scratch-background.webp">
+	<link rel="preload" as="image" href="/wp-content/uploads/2023/12/black-scratch-background.webp">
 	<link rel="dns-prefetch" as='style' href="//use.typekit.net/rux8kck.css">
 </head>
 
@@ -40,6 +40,7 @@ use ChoctawNation\Navwalker;
 												'style'   => 'width:200px;max-width:80%',
 												'class'   => 'logo--mobile h-auto',
 												'loading' => 'eager',
+												'data-spai-eager' => true,
 											)
 										);
 										?>
@@ -54,6 +55,7 @@ use ChoctawNation\Navwalker;
 											array(
 												'class'   => 'logo--desktop h-100 d-none d-lg-block object-fit-cover overflow-visible',
 												'loading' => 'eager',
+												'data-spai-eager' => true,
 											)
 										);
 										?>
@@ -65,6 +67,7 @@ use ChoctawNation\Navwalker;
 										array(
 											'class'   => 'logo d-block d-lg-none',
 											'loading' => 'eager',
+											'data-spai-eager' => true,
 										)
 									);
 									?>
@@ -80,6 +83,7 @@ use ChoctawNation\Navwalker;
 												'style'   => 'width:285px;',
 												'class'   => 'logo h-auto',
 												'loading' => 'eager',
+												'data-spai-eager' => true,
 											)
 										);
 										?>
@@ -114,7 +118,7 @@ use ChoctawNation\Navwalker;
 								'fallback_cb'    => '__return_false',
 								'items_wrap'     => '<ul id="bootscore-navbar" class="navbar-nav %2$s">%3$s</ul>',
 								'depth'          => 2,
-								'walker'         => new Navwalker(),
+								'walker'         => new Simple_Navwalker(),
 							)
 						);
 						?>

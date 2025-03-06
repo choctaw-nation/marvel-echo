@@ -1,10 +1,19 @@
+// site styles
 import './styles/main.scss';
+
+// bootstrap
 import './styles/vendors/bootstrap.scss';
 import 'bootstrap/js/dist/collapse';
 import 'bootstrap/js/dist/modal';
+
+// lite-vimeo
 import '@slightlyoff/lite-vimeo';
+
+// aos
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
+// swiper
 import Swiper from 'swiper';
 import { Navigation, A11y, Pagination } from 'swiper/modules';
 import 'swiper/scss';

@@ -48,6 +48,7 @@ auth.json
 /wp-content/autoptimize_404_handler.php
 /wp-content/themes/twenty*/
 /wp-content/themes/*/dist/
+/wp-content/themes/*/inc/theme/gallery-cache.php
 /wp-content/.htaccess
 /wp-content/db.php
 /wp-content/advanced-cache.php

@@ -12,6 +12,10 @@
 			]
 		}
 	],
+	"scripts": {
+		"phpcs": "phpcs wp-content/themes/echo/ --extensions=php --ignore=wp-content/themes/echo/dist/,wp-content/themes/echo/inc/theme/gallery-cache.php",
+		"phpcbf": "phpcbf wp-content/themes/echo/ --extensions=php --ignore=wp-content/themes/echo/dist/,wp-content/themes/echo/inc/theme/gallery-cache.php"
+	},
 	"config": {
 		"allow-plugins": {
 			"composer/installers": true,

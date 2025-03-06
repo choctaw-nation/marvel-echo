@@ -23,9 +23,9 @@ class Theme_Init {
 		$this->theme_type = $type;
 		$this->load_required_files();
 		$this->disable_discussion();
+		$this->init_gtm();
 		$this->load_favicons( 'nation' );
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_cno_scripts' ) );
-		// add_action( 'enqueue_block_editor_assets', array( $this, 'enqueue_bootstrap_variables' ) );
 		add_action( 'after_setup_theme', array( $this, 'cno_theme_support' ) );
 		add_action( 'init', array( $this, 'alter_post_types' ) );
 		/**
@@ -83,6 +83,7 @@ class Theme_Init {
 
 		$navwalkers = array(
 			'navwalker',
+			'simple-navwalker',
 		);
 		foreach ( $navwalkers as $navwalker ) {
 			require_once $base_path . "/theme/navwalkers/class-{$navwalker}.php";
@@ -197,10 +198,11 @@ class Theme_Init {
 		add_theme_support( 'post-thumbnails' );
 		add_theme_support( 'title-tag' );
 
+		add_image_size( 'gallery-image', 2880, 2160 );
 		register_nav_menus(
 			array(
-				'primary_menu' => __( 'Primary Menu', 'cno' ),
-				'footer_menu'  => __( 'Footer Menu', 'cno' ),
+				'main-menu'   => __( 'Main Menu', 'cno' ),
+				'footer-menu' => __( 'Footer Menu', 'cno' ),
 			)
 		);
 	}
@@ -234,5 +236,23 @@ class Theme_Init {
 				remove_post_type_support( $post_type, $support );
 			}
 		}
+	}
+
+	/**
+	 * Manually Enqueue GTM Scripts
+	 */
+	private function init_gtm() {
+		add_action(
+			'wp_head',
+			function () {
+				echo "<!-- Google Tag Manager --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-N8NFBXK5');</script><!-- End Google Tag Manager -->";
+			}
+		);
+		add_action(
+			'wp_body_open',
+			function () {
+				echo '<!-- Google Tag Manager (noscript) --><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8NFBXK5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- End Google Tag Manager (noscript) -->';
+			}
+		);
 	}
 }
