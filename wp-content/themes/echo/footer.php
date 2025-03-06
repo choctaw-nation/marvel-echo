@@ -28,7 +28,6 @@
 						?>
 					</a>
 				</div>
-
 				<div class="col-md-5 p-3 d-flex flex-column">
 					<?php
 					$links = array(
@@ -71,7 +70,6 @@
 							'href'  => 'https://ondisneyplus.disney.com/show/echo',
 						),
 					);
-
 					foreach ( $links as $footer_link ) {
 						echo '<a class="fs-3 mb-2 text-white" target="_blank" rel="noopener noreferrer" href="' . esc_url( $footer_link['href'] ) . '">' . esc_html( $footer_link['title'] ) . '</a>';
 					}

@@ -39,8 +39,8 @@
 	width: fit-content;
 }
 
-.btn-easter-egg {
-	font-size: 5rem;
+.btn.btn-easter-egg {
+	--bs-btn-font-size: 5rem;
 	scale: 1;
 	transition: scale 0.2s ease;
 	animation: pulse linear 1.5s infinite alternate;

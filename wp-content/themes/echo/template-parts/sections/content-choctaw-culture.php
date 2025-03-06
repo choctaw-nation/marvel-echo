@@ -36,9 +36,9 @@ $symbols = array(
 		</div>
 	</div>
 
-	<div class="row row-cols-1 row-cols-lg-3">
+	<div class="row row-cols-1 row-cols-lg-3 row-gap-5">
 		<?php foreach ( $symbols as $index => $symbol ) : ?>
-		<div class='col mb-5 d-flex flex-column'>
+		<div class="col d-flex flex-column position-relative">
 			<?php
 			echo wp_get_attachment_image(
 				$symbol['id'],
@@ -55,13 +55,13 @@ $symbols = array(
 			?>
 			<p class="h3 mt-auto">
 				<a href="<?php echo $symbol['button_link']; ?>" target="_blank" rel="noreferrer noopener"
-					class="btn btn-primary btn-lg rounded-0 border-0"><?php echo $symbol['button_text']; ?></a>
+					class="btn btn-primary btn-lg rounded-0 border-0 stretched-link"><?php echo $symbol['button_text']; ?></a>
 			</p>
 		</div>
 		<?php endforeach; ?>
 	</div>
 
-	<div class="row flex-row-reverse">
+	<div class="row flex-row-reverse row-gap-3">
 		<div class="col-12 col-lg-5 ">
 			<?php
 			echo wp_get_attachment_image(
@@ -69,7 +69,7 @@ $symbols = array(
 				'full',
 				false,
 				array(
-					'class'    => 'mb-3',
+					'class'    => 'w-100 h-auto',
 					'data-aos' => 'fade-right',
 					'loading'  => 'lazy',
 				)

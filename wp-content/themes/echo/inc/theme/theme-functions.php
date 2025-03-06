@@ -54,33 +54,13 @@ function cno_echo_svg( string $logo_path, string|false $alt_text, string $fallba
 	echo cno_read_svg( $logo_path, $alt_text, $fallback );
 }
 
-/**
- * Get the federated privacy policy from Choctaw Nation main site.
- *
- * @return string The federated privacy policy.
- */
-function cno_get_federated_privacy_policy(): string|WP_Error {
-	$policy = get_transient( 'cno_privacy_policy' );
-	if ( ! $policy ) {
-		$page_request  = wp_remote_get( 'https://www.choctawnation.com/wp-json/wp/v2/pages/3?_fields=title,acf' );
-		$page_response = wp_remote_retrieve_body( $page_request );
-		if ( is_wp_error( $page_response ) ) {
-			return $page_response;
-		}
-		$page_data   = json_decode( $page_response, true );
-		$thirty_days = 60 * 60 * 24 * 30;
-		set_transient( 'cno_privacy_policy', acf_esc_html( $page_data['acf']['content'] ), $thirty_days );
-		$policy = get_transient( 'cno_privacy_policy' );
-	}
-	return $policy;
-}
 
 /**
  * Returns the `data-aos-delay` value for objects in a loop
  *
  * @param int $index the loop's index
  */
-function get_delay( int $index ): string {
+function cno_get_delay( int $index ): string {
 	return 0 === $index ? '' : "data-aos-delay='" . ( $index * 150 ) . "'";
 }
 

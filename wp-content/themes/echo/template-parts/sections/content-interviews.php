@@ -26,10 +26,10 @@ $interviews = array(
 );
 ?>
 <section class="container" id="interviews">
-	<div class="row row-cols-1 row-cols-lg-3">
+	<div class="row row-cols-1 row-cols-lg-3 row-gap-5">
 		<?php foreach ( $interviews as $index => $interview ) : ?>
-		<div class="col mb-5">
-			<div class="ratio ratio-16x9 mb-3" data-aos='fade-right' <?php echo get_delay( $index ); ?>>
+		<div class="col">
+			<div class="ratio ratio-16x9 mb-3" data-aos='fade-right' <?php echo cno_get_delay( $index ); ?>>
 				<lite-vimeo videoid='<?php echo $interview['src']; ?>'></lite-vimeo>
 			</div>
 			<h3><?php echo $interview['headline']; ?></h3>

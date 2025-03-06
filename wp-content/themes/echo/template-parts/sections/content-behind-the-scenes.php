@@ -7,9 +7,9 @@
 
 ?>
 <section class="container" id="behind-the-scenes">
-	<div class="row">
+	<div class="row row-gap-3">
 		<div class="col-12 col-lg-6">
-			<div class="ratio ratio-16x9 mb-3" data-aos='fade-down'>
+			<div class="ratio ratio-16x9" data-aos='fade-down'>
 				<lite-vimeo videoid="899928430"></lite-vimeo>
 			</div>
 		</div>

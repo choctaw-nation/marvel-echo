@@ -28,7 +28,7 @@ $photos = array(
 			<div class="container-fluid">
 				<div class="row">
 					<?php foreach ( $photos as $index => $photo ) : ?>
-					<div class="col mb-4" data-aos='fade-right' <?php echo get_delay( $index ); ?>>
+					<div class="col mb-4" data-aos='fade-right' <?php echo cno_get_delay( $index ); ?>>
 						<?php
 						echo wp_get_attachment_image(
 							$photo['id'],

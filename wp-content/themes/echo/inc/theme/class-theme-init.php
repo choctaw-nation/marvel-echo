@@ -73,14 +73,6 @@ class Theme_Init {
 		/** Loads the Theme Functions File (to keep the actual functions.php file clean) */
 		require_once $base_path . '/theme/theme-functions.php';
 
-		$asset_loaders = array(
-			'enum-enqueue-type',
-			'class-asset-loader',
-		);
-		foreach ( $asset_loaders as $asset_loader ) {
-			require_once $base_path . "/theme/asset-loader/{$asset_loader}.php";
-		}
-
 		$navwalkers = array(
 			'navwalker',
 			'simple-navwalker',
@@ -90,8 +82,7 @@ class Theme_Init {
 		}
 
 		$utility_files = array(
-			'allow-svg'   => 'Allow_SVG',
-			'role-editor' => 'Role_Editor',
+			'allow-svg' => 'Allow_SVG',
 		);
 		foreach ( $utility_files as $utility_file => $class_name ) {
 			require_once $base_path . "/theme/class-{$utility_file}.php";
@@ -132,6 +123,14 @@ class Theme_Init {
 	 * Adds scripts with the appropriate dependencies
 	 */
 	public function enqueue_cno_scripts() {
+		wp_enqueue_script(
+			'fontawesome',
+			'https://kit.fontawesome.com/126b3b4955.js',
+			array(),
+			'1.0',
+			array( 'strategy' => 'async' )
+		);
+
 		wp_enqueue_style(
 			'typekit',
 			'https://use.typekit.net/rux8kck.css',
@@ -149,7 +148,7 @@ class Theme_Init {
 		wp_enqueue_script(
 			'global',
 			get_stylesheet_directory_uri() . '/dist/global.js',
-			array(),
+			array( 'fontawesome' ),
 			$global_assets['version'],
 			array( 'strategy' => 'defer' )
 		);
@@ -169,16 +168,6 @@ class Theme_Init {
 				'dashicons',
 				'global-styles',
 			)
-		);
-	}
-
-	/** Enqueue Bootstrap variables for the block editor */
-	public function enqueue_bootstrap_variables() {
-		new Asset_Loader(
-			'editor-bootstrap',
-			Enqueue_Type::style,
-			'vendors',
-			array()
 		);
 	}
 
