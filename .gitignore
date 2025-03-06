@@ -1,13 +1,7 @@
 # Wordpress - ignore core, configuration, examples, uploads and logs.
 # https://github.com/github/gitignore/blob/main/WordPress.gitignore
 
-.wpe-*
-_wpeprivate
 
-.DS_Store
-/node_modules
-/vendor
-/.vscode
 
 # Core
 #
@@ -23,31 +17,47 @@ _wpeprivate
 /license.txt
 /readme.html
 /wp-*.php
+!/wp-config-sample.php
 /xmlrpc.php
 
 # Configuration
 wp-config.php
+local-xdebuginfo.php
+/node_modules
+.DS_Store
+.env
+.env*
+auth.json
+/vendor
+/bundle-analyzer
+/.vscode/*
+
+# WP Engine
+/_wpeprivate
+/.wpe-*
+/.wpengine-conf
 
 
-/wp-content/themes/twenty*/
-/wp-content/plugins/hello.php
+# WP-Content
+/wp-content/cache/
+/wp-content/mu-plugins/
+/wp-content/plugins
+/wp-content/upgrade/
+/wp-content/upgrade-temp-backup/
 /wp-content/uploads/
+/wp-content/autoptimize_404_handler.php
+/wp-content/themes/twenty*/
+/wp-content/themes/*/dist/
+/wp-content/themes/*/inc/theme/gallery-cache.php
+/wp-content/.htaccess
+/wp-content/db.php
 /wp-content/advanced-cache.php
+/wp-content/autoptimize_404_handler.php
+
+
 
 # Log files
 *.log
 
 # htaccess
 /.htaccess
-
-# All plugins
-#
-# Note: If you wish to whitelist plugins,
-# uncomment the next line
-/wp-content/plugins
-
-# All themes
-#
-# Note: If you wish to whitelist themes,
-# uncomment the next line
-# /wp-content/themes

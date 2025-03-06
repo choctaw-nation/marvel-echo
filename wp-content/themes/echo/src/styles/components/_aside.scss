@@ -1,0 +1,92 @@
+@use "../abstracts/mixins" as m;
+
+%size {
+	position: absolute;
+	inset: 0;
+}
+
+.scratch-bg {
+	--size: 0;
+	top: var(--size);
+	bottom: var(--size);
+	width: 100%;
+
+	@include m.media-breakpoint-up(lg) {
+		--size: 5%;
+		left: 40%;
+	}
+
+	@include m.media-breakpoint-up(xl) {
+		--size: 10%;
+	}
+
+	&__color {
+		@extend %size;
+		background-color: var(--bs-primary);
+	}
+	&__image {
+		@extend %size;
+		background-image: url(/wp-content/uploads/2023/12/black-scratch-background.webp);
+		background-size: contain;
+
+		.black-scratch-bg & {
+			mix-blend-mode: screen;
+		}
+	}
+}
+
+.quote-attribution {
+	width: fit-content;
+}
+
+.btn.btn-easter-egg {
+	--bs-btn-font-size: 5rem;
+	scale: 1;
+	transition: scale 0.2s ease;
+	animation: pulse linear 1.5s infinite alternate;
+
+	top: -60px;
+	right: -20px;
+
+	@include m.media-breakpoint-up(sm) {
+		top: -40px;
+		right: -40px;
+	}
+
+	@include m.media-breakpoint-up(lg) {
+		top: -20px;
+	}
+
+	@include m.media-breakpoint-up(xl) {
+		top: 10px;
+		right: -20px;
+	}
+
+	@include m.media-breakpoint-up(xxl) {
+		top: 50px;
+		right: -40px;
+	}
+
+	&:hover,
+	&:focus,
+	&:focus-within {
+		animation-play-state: paused;
+		scale: 1.15;
+		opacity: 1 !important;
+		text-shadow: 4px 4px 10px rgba(black, 1) !important;
+	}
+}
+
+@keyframes pulse {
+	0% {
+		opacity: 0.6;
+		transform: scale(0.95);
+		text-shadow: 2px 2px 10px rgba(black, 0.7);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+		text-shadow: 4px 4px 10px rgba(black, 1);
+	}
+}
