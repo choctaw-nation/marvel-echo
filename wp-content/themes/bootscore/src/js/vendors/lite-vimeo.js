@@ -1,1 +1,0 @@
-import '@slightlyoff/lite-vimeo';
