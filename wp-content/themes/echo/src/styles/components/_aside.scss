@@ -26,7 +26,7 @@
 	}
 	&__image {
 		@extend %size;
-		background-image: url(/wp-content/uploads/2023/12/black-scratch-background.webp);
+		background-image: url(../../img/black-scratch-background.webp);
 		background-size: contain;
 
 		.black-scratch-bg & {
