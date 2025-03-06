@@ -15,7 +15,7 @@
 				conversation after the screening.</p>
 			<p class="h3">
 				<a href="https://www.choctawnation.com/biskinik/news/marvel-studios-unveils-echo-at-choctaw-day-celebration/" target="_blank" rel="noreferrer noopener"
-				   class="btn btn-primary rounded-0 border-0"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> View Article</a>
+					class="btn btn-primary rounded-0 border-0"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> View Article</a>
 			</p>
 		</div>
 	</div>
@@ -31,9 +31,9 @@
 					$swiper_slide_image_ids = cno_get_gallery_image_ids();
 					$content                = '';
 					foreach ( $swiper_slide_image_ids as $image_id ) {
-						
+
 						$image_url = wp_get_attachment_url( $image_id );
-						
+
 						$content .= "<div class='swiper-slide text-center d-flex justify-content-center align-items-center bg-white'><a href='" . $image_url . "'>" .
 							wp_get_attachment_image(
 								$image_id,

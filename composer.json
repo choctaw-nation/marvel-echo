@@ -12,6 +12,10 @@
 			]
 		}
 	],
+	"scripts": {
+		"phpcs": "phpcs wp-content/themes/echo/ --extensions=php --ignore=wp-content/themes/echo/dist/",
+		"phpcbf": "phpcbf wp-content/themes/echo/ --extensions=php --ignore=wp-content/themes/echo/dist/"
+	},
 	"config": {
 		"allow-plugins": {
 			"composer/installers": true,
