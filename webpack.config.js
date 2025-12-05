@@ -6,12 +6,10 @@ const THEME_NAME = 'echo';
 /** The location of your theme. */
 const THEME_DIR = `/wp-content/themes/${ THEME_NAME }`;
 
-
-
 module.exports = {
 	...defaultConfig,
 	...{
-		entry: function () {
+		entry() {
 			/** Custom entry points */
 			const entries = {
 				global: `.${ THEME_DIR }/src/index.js`,

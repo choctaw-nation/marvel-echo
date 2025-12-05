@@ -7,12 +7,14 @@
 
 .scratch-bg {
 	--size: 0;
+
 	top: var(--size);
 	bottom: var(--size);
 	width: 100%;
 
 	@include m.media-breakpoint-up(lg) {
 		--size: 5%;
+
 		left: 40%;
 	}
 
@@ -22,11 +24,14 @@
 
 	&__color {
 		@extend %size;
+
 		background-color: var(--bs-primary);
 	}
+
 	&__image {
 		@extend %size;
-		background-image: url(../../img/black-scratch-background.webp);
+
+		background-image: url("../../img/black-scratch-background.webp");
 		background-size: contain;
 
 		.black-scratch-bg & {
@@ -41,10 +46,10 @@
 
 .btn.btn-easter-egg {
 	--bs-btn-font-size: 5rem;
+
 	scale: 1;
 	transition: scale 0.2s ease;
 	animation: pulse linear 1.5s infinite alternate;
-
 	top: -60px;
 	right: -20px;
 
@@ -73,7 +78,7 @@
 		animation-play-state: paused;
 		scale: 1.15;
 		opacity: 1 !important;
-		text-shadow: 4px 4px 10px rgba(black, 1) !important;
+		text-shadow: 4px 4px 10px rgb(black, 1) !important;
 	}
 }
 
@@ -81,12 +86,12 @@
 	0% {
 		opacity: 0.6;
 		transform: scale(0.95);
-		text-shadow: 2px 2px 10px rgba(black, 0.7);
+		text-shadow: 2px 2px 10px rgb(black, 0.7);
 	}
 
 	100% {
 		opacity: 1;
 		transform: scale(1);
-		text-shadow: 4px 4px 10px rgba(black, 1);
+		text-shadow: 4px 4px 10px rgb(black, 1);
 	}
 }
