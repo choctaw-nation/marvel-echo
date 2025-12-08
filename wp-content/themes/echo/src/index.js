@@ -7,7 +7,7 @@ import 'bootstrap/js/dist/collapse';
 import 'bootstrap/js/dist/modal';
 
 // lite-vimeo
-import '@slightlyoff/lite-vimeo';
+import '@choctawnationofoklahoma/lite-vimeo';
 
 // aos
 import AOS from 'aos';
